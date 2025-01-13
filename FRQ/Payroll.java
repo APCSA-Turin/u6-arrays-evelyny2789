@@ -1,6 +1,10 @@
 public class Payroll {
     private int[] itemsSold; // number of items sold by each employee
     private double[] wages; // wages to be computed in part (b)
+
+    public double[] getWages() {
+      return wages;
+  }
     
     /* Creates a Payroll object
      

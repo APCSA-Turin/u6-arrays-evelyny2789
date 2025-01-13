@@ -3,8 +3,15 @@ public class Sound {
     /* the array of values in this sound; guaranteed not to be null */
     private int[] samples;
   
-    /* constructor not shown */
- 
+    public Sound(int[] samples) {
+        this.samples = samples;
+    }
+    
+    
+    public int[] getSamples() {
+        return samples;
+    }
+    
     /* Changes those values in this sound that have an amplitude
      * greater than limit. Values greater than limit are changed to
      * limit. Values less than -limit are changed to -limit.

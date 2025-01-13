@@ -44,11 +44,9 @@ public Flower[] sortByQuantity(Flower[] arr) {
     Postcondition: newInventory is unchanged.
   */
 public void updateInventory(Flower[] newInventory){
-  for (int i = 0; i < flowerInventory.length; i++){
-    Flower flower = flowerInventory[i]; 
-    Flower newFlower = newInventory[i]; 
-    int newInv = flower.getQuantity() + newFlower.getQuantity(); 
-    flower.setQuantity(newInv); 
+  for (int i = 0; i < newInventory.length; i++){
+    int newInv = flowerInventory[i].getQuantity() + newInventory[i].getQuantity(); 
+    flowerInventory[i].setQuantity(newInv); 
   }
 }
 
